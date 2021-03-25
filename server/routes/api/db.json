@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "b001da42-9e56-4b77-bf85-2a88f3d37f9a",
+      "todo": "hello world",
+      "done": false
+    },
+    {
+      "id": "c79444c1-3db0-43a3-a44c-b5c06a5d9a90",
+      "todo": "Learn Redux",
+      "done": false
+    },
+    {
+      "id": "65a9806f-0464-4bbb-b33c-e826c785d8da",
+      "todo": "Publish to Github",
+      "done": false
+    }
+  ]
+}

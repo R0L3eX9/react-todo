@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Form from './components/Form';
+import ShowTodos from './components/ShowTodos';
+import NavBar from './components/NavBar';
+import { Flex } from '@chakra-ui/react';
+
+export const FetchContext = React.createContext();
 
 function App() {
+  const [isFetching, setIsFetching] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <FetchContext.Provider value={ {isFetching, setIsFetching} }>
+      <NavBar />
+      <Flex direction="column" justify="center" align="center">
+        <Form />
+        <ShowTodos />
+      </Flex>
+    </FetchContext.Provider>
+  </>
   );
 }
 
