@@ -18,7 +18,7 @@ Run:
 git clone git@github.com:R0L3eX9/react-todo.git
 cd react-todo
 npm install
-npm start
+npm run start
 ```
 
 ## What I learned?
